@@ -1,0 +1,94 @@
+create database vote;
+
+use vote;
+
+
+create table 1st_cand(
+id int auto_increment primary key,
+name varchar(50),
+email varchar(100),
+mobile bigint,
+BRANCH VARchar(30),
+rollno bigint,
+enrillid varchar(40),
+approve_status int);
+
+create table 2nd_cand(
+id int auto_increment primary key,
+name varchar(50),
+email varchar(100),
+mobile bigint,
+BRANCH VARchar(30),
+rollno bigint,
+enrillid varchar(40),
+approve_status int);
+
+create table 3rd_cand(
+id int auto_increment primary key,
+name varchar(50),
+email varchar(100),
+mobile bigint,
+BRANCH VARchar(30),
+rollno bigint,
+enrillid varchar(40),
+approve_status int);
+
+create table user_1st(
+id int auto_increment primary key,
+name varchar(60),
+email varchar(60),
+branch text,
+number varchar(20),
+candidate varchar(60),
+rollno varchar(20),
+reeason varchar(200));
+
+create table user_2nd(
+id int auto_increment primary key,
+name varchar(60),
+email varchar(60),
+branch text,
+number varchar(20),
+candidate varchar(60),
+rollno varchar(20),
+reeason varchar(200));
+
+create table user_3rd(
+id int auto_increment primary key,
+name varchar(60),
+email varchar(60),
+branch text,
+number varchar(20),
+candidate varchar(60),
+rollno varchar(20),
+reeason varchar(200));
+
+
+create table contact(
+id int auto_increment primary key,
+name varchar(100),
+email varchar(100),
+message varchar(250));
+
+
+create table suggestion(
+id int auto_increment primary key,
+name varchar(50),
+email varchar(50),
+number varchar(20),
+rollno int,
+suggestion varchar(250));
+
+create table admin(
+id int auto_increment primary key,
+username varchar(100),
+password varchar(100),
+adminName varchar(100));
+
+insert into admin (username, password, adminName) values('akshish2002', 'akshish@2002', 'Akshish');
+
+insert into admin (username, password, adminName) values('nityam2003', 'nityam@2003', 'Nityam');
+
+insert into admin (username, password, adminName) values('stavan2003', 'stavan@2003', 'Stavan');
+
+insert into admin (username, password, adminName) values('neel2003', 'neel@2003', 'Neel');
